@@ -1,0 +1,76 @@
+.itemContainer {
+    padding: 10px;
+    background-color: white;
+
+    &:not(:last-child){
+        border-bottom: solid 1px #cccccc;
+    }
+
+    .item {
+        display: flex;
+        p {
+            color: black;
+            text-decoration: none;
+        }
+        img {
+            width: 180px;
+            height: 180px;
+        }
+        &--info {
+            flex: 9;
+            margin-left: 10px;
+            &__price {
+                display: inline-block;
+                font-size: 22px;
+                &--decimals {
+                    font-size: 12px;
+                    position: relative;
+                    bottom: 7px;
+                }
+            }
+            &__shipping{
+                border-radius: 50%;
+                display: inline-block;
+                position: relative;
+                left: 5px;
+                top: 2px;
+                width: 20px;
+                height: 20px;
+                background: no-repeat url("../../assets/ic_shipping-xs.png") 50% 50%;
+            }
+            &__title{
+                text-decoration: none;
+                color: initial;
+            }
+        }
+        &--location {
+            flex: 1;
+            p{
+                text-align: center;
+                color: #666;
+                font-size: 14px;
+                position: relative;
+              }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media(max-width: 480px){
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .item-price{
+      margin: 10px 0;
+    }
+
+    .item-title p{
+        font-size: 14px;
+    }
+}

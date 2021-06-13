@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #ffE600;
+    padding: 10px 0;
+    &--form {
+        display: flex;
+        max-width: 1024px;
+        margin: 0 auto;
+        img {
+            width: 50px;
+            position: relative;
+            top: 3px;
+        }
+        &__input {
+            margin-left: 10px;
+            flex: 20;
+            padding: 10px;
+            border: none;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            &:focus-visible{
+                outline: none;
+            }
+        }
+        &__btn {
+            flex: 1;
+            max-width: 35px;
+            border: none;
+            background: no-repeat url("../../assets/search-xl.png") #EEEEEE 50% 50%;
+            background-size: 54%;
+            cursor: pointer;
+        }
+    }
+}
