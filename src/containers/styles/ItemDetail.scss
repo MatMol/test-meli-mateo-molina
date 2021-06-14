@@ -27,6 +27,11 @@
                 font-size: 32px;
                 font-weight: normal;
                 margin-top: 10px;
+                span{
+                    font-size: 18px;
+                    position: relative;
+                    bottom: 15px;
+                }
             }
             &__btn {
                 padding: 10px;
